@@ -1,7 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
-import { frontendFrameworkSkillIcons, frontendStyleSkillIcons } from "@/utils/skills";
-import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
+import SkillSection from "@/components/SkillSection";
 
 export default function HomePage() {
   return (
@@ -16,61 +13,7 @@ export default function HomePage() {
         </div>
 
         {/* 技能區塊 */}
-        <Card>
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">技能 Skillset</h2>
-
-            <h3 className="text-xl font-semibold mb-4">前端框架 Frontend Framework</h3>
-            <div className="flex flex-wrap gap-4 items-center mb-6">
-              {frontendFrameworkSkillIcons.map((skill, index) => (
-                <Tooltip key={index}>
-                  <TooltipTrigger asChild>
-                    <div>
-                      <Image
-                        src={skill.src}
-                        alt={skill.alt}
-                        width={45}
-                        height={45}
-                      />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent
-                    side="top"
-                    sideOffset={8}
-                    className="bg-black text-white rounded px-3 py-1 text-sm"
-                  >
-                    <p>{skill.alt}</p>
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </div>
-
-            <h3 className="text-xl font-semibold mb-4">UI框架 UI Framework</h3>
-            <div className="flex flex-wrap gap-4 items-center mb-6">
-              {frontendStyleSkillIcons.map((skill, index) => (
-                <Tooltip key={index}>
-                  <TooltipTrigger asChild>
-                    <div>
-                      <Image
-                        src={skill.src}
-                        alt={skill.alt}
-                        width={45}
-                        height={45}
-                      />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent
-                    side="top"
-                    sideOffset={8}
-                    className="bg-black text-white rounded px-3 py-1 text-sm"
-                  >
-                    <p>{skill.alt}</p>
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+        <SkillSection />
       </section>
     </main>
   );
