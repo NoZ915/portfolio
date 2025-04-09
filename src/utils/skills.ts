@@ -21,7 +21,7 @@ export const languageSkills = [
   },
 ];
 
-export const frontendAndUIFrameworkSkills = [
+export const frontendSkills = [
   {
     src: '/skills/react.svg',
     alt: 'React',
@@ -58,9 +58,6 @@ export const frontendAndUIFrameworkSkills = [
     src: '/skills/bootstrap.svg',
     alt: 'Bootstrap',
   },
-];
-
-export const librarySkills = [
   {
     src: '/skills/pixijs.svg',
     alt: 'PixiJS',
@@ -87,7 +84,7 @@ export const librarySkills = [
   },
 ];
 
-export const backendFrameworkSkills = [
+export const backendSkills = [
   {
     src: '/skills/nodejs.svg',
     alt: 'Node.js',

@@ -13,7 +13,7 @@ interface SkillGroupProps {
 
 export default function SkillGroup({ title, skills }: SkillGroupProps) {
   return (
-    <div className="mb-6">
+    <div className="mb-4">
       <h3 className="text-xl font-semibold mb-4">{title}</h3>
       <div className="flex flex-wrap gap-4 items-center">
         {skills.map((skill, index) => (
