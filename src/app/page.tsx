@@ -1,3 +1,4 @@
+import { ProjectSection } from "@/components/projects/ProjectSection";
 import SkillSection from "@/components/skills/SkillSection";
 import { ExperienceSection } from "@/components/timeline/ExperienceSection";
 import { Button } from "@/components/ui/button";
@@ -23,6 +24,9 @@ export default function HomePage() {
 
         {/* 經驗時間軸 */}
         <ExperienceSection />
+
+        {/* 專案區塊 */}
+        <ProjectSection />
 
         {/* 技能區塊 */}
         <SkillSection />
