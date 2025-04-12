@@ -9,7 +9,7 @@ export function ExperienceSection() {
       {experience.map((item, index) => (
         <TimelineItem
           key={index}
-          year={item.year}
+          time={item.time}
           title={item.title}
           description={item.description}
         />

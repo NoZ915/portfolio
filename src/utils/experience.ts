@@ -1,7 +1,7 @@
 export const experience = [
   // 鈦坦
   {
-    year: "2024/07 ~ Now",
+    time: "2024/07 ~ Now",
     title: "新加坡商鈦坦科技｜軟體實習工程師",
     description: [
       {
@@ -19,7 +19,7 @@ export const experience = [
 
   // 好想工作室
   {
-    year: "2021/04 ~ 2023/10",
+    time: "2021/04 ~ 2023/10",
     title: "好想工作室 Web Camp | 學員",
     description: [
       {
