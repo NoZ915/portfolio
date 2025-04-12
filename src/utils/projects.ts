@@ -42,7 +42,7 @@ export const projects = [
         image: "/projects/pah-ni-lam-gu.png",
         description: "一款自製解謎遊戲，從遊戲腳本、美術設計到程式設計皆自行完成。主要由pixi.js以及操作HTML DOM元素、CSS來完成網頁遊戲之畫面，而遊戲媒介則透過LINE Bot完成，背後則透過Express做為後端框架來建立伺服器連接，並將LINE Bot部署在Heroku這個雲平台上。",
         skills: ["HTML", "CSS", "JavaScript", "Pixi.js", "Express", "Heroku", "LINE Bot"],
-        link: "/projects/century-encounter"
+        link: "/projects/pah-ni-lam-gu"
     },
     {
         title: "登革熱學習管理系統網站",

@@ -22,7 +22,7 @@ export default function HomePage() {
           </Button>
         </div>
 
-        {/* 經驗時間軸 */}
+        {/* 經驗 */}
         <ExperienceSection />
 
         {/* 專案區塊 */}
