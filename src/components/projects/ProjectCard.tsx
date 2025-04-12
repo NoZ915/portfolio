@@ -1,9 +1,12 @@
+import { FaCalendarAlt } from "react-icons/fa";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
   title: string;
+  subtitle: string;
+  time: string;
   image: string;
   description: string;
   skills: string[];
@@ -18,7 +21,7 @@ export function ProjectGrid({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function ProjectCard({ title, image, description, skills, link }: Props) {
+export default function ProjectCard({ title, subtitle, time, image, description, skills, link }: Props) {
   return (
     <Link href={link}>
       <div className="group bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
@@ -27,6 +30,11 @@ export default function ProjectCard({ title, image, description, skills, link }:
         </div>
         <div className="p-4 space-y-2">
           <h3 className="text-xl font-semibold">{title}</h3>
+          <p className="font-semibold">{subtitle}</p>
+          <span className="flex items-center gap-2 text-sm text-muted-foreground">
+            <FaCalendarAlt className="w-4 h-4" />
+            {time}
+          </span>
           <p className="text-muted-foreground line-clamp-2">{description}</p>
           <div className="flex flex-wrap gap-2 mt-2">
             {skills.map((skill, index) => (

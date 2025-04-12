@@ -9,6 +9,8 @@ export const ProjectSection = () => {
           <ProjectCard
             key={index}
             title={project.title}
+            subtitle={project.subtitle}
+            time={project.time}
             image = {project.image}
             description={project.description}
             skills={project.skills}

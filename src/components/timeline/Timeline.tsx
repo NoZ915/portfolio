@@ -33,7 +33,7 @@ export function TimelineItem({
   return (
     <div className="mb-10 ml-4 relative">
       <div className="absolute w-3 h-3 bg-gray-700 rounded-full -left-5.5 top-1.5" />
-      <time className="mb-1 text-sm font-normal leading-none text-gray-400">{year}</time>
+      <time className="mb-1 text-sm font-normal leading-none text-muted-foreground">{year}</time>
       <h3 className="text-lg font-semibold text-gray-900 mb-1">{title}</h3>
       <ul className="list-disc list-outside pl-5 text-base font-normal text-gray-500 space-y-1">
         {description.map((item, index) => (
