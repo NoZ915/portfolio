@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
 
-type Props = {
+interface ProjectCardProps {
   title: string;
   subtitle: string;
   time: string;
@@ -21,7 +21,7 @@ export function ProjectGrid({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function ProjectCard({ title, subtitle, time, image, description, skills, link }: Props) {
+export default function ProjectCard({ title, subtitle, time, image, description, skills, link }: ProjectCardProps) {
   return (
     <Link href={link}>
       <div className="group bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition">
