@@ -27,11 +27,11 @@ export const experience = [
         subitems: [
           {
             text: "- 閉包與範圍",
-            link: "https://hackmd.io/@yuxuanlin/closure-and-scope"
+            link: "https://hackmd.io/@noz915/BJIRyzGrj"
           },
           {
             text: "- 正規表達式",
-            link: "https://hackmd.io/@yuxuanlin/regex"
+            link: "https://hackmd.io/@noz915/rksy4m8js"
           }
         ]
       },
