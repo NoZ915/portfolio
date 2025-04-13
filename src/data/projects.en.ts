@@ -7,7 +7,7 @@ export const projects = [
     description:
       "This project uses genetic algorithms to assist in item selection for parallel test construction. With one click, users can generate two exam papers of equivalent difficulty with completely different questions. This is especially useful for teachers needing two versions of a test, such as one for make-up exams, ensuring fairness in difficulty and avoiding question repetition and exposure.",
     skills: ["React JS", "MUI", "Node JS", "Express JS", "MongoDB", "Zeabur"],
-    link: "/projects/century-encounter"
+    link: "/projects/ga"
   },
   {
     title: "Diagnostic Test for Inferring Learning Errors",
@@ -17,7 +17,7 @@ export const projects = [
     description:
       "This system uses Bayesian probability to diagnose students' learning errors. Teachers can add questions and define error types. After students take the test, the system instantly calculates their familiarity with each error type and predicts their correctness probability. At the end of the test, unfamiliar error types are ranked, and learning videos provided by the teacher are recommended for review.",
     skills: ["React", "MUI", "Node.js", "Express", "MongoDB", "Zeabur"],
-    link: "/projects/century-encounter"
+    link: "/projects/bsmf"
   },
   {
     title: "BinGo Group Buying Platform",
