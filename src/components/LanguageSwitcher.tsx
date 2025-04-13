@@ -17,9 +17,10 @@ export default function LanguageSwitcher() {
   const locale = useLocale();
 
   const handleSwitch = (newLocale: string) => {
-    const segments = pathname.split('/');
-    segments[1] = newLocale;
-    router.push(segments.join('/'));
+    const segments = pathname.split('/')
+    segments[1] = newLocale 
+    const newPath = segments.join('/')
+    router.replace(newPath, { scroll: false }) // 保留 scroll 位置
   };
 
   return (
