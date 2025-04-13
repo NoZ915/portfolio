@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
-export default function CenturyEncounterPage() {
+export default function PahNiLamGuPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 space-y-6">
       <div>
