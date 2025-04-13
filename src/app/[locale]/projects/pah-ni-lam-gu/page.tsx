@@ -44,12 +44,12 @@ export default function PahNiLamGuPage() {
       </div>
 
       {/* 專案介紹 */}
-      <div>
-        <h2 className="text-xl font-semibold mb-2">{pahNiLamGu.sections.introduction}</h2>
-        <p className="leading-relaxed space-y-2">
+      <div className="space-y-2">
+        <h2 className="text-xl font-semibold">{pahNiLamGu.sections.introduction}</h2>
+        <p className="leading-relaxed">
           {pahNiLamGu.content.intro1}
         </p>
-        <p className="leading-relaxed mt-2">
+        <p className="leading-relaxed">
           {pahNiLamGu.content.intro2}
         </p>
       </div>
@@ -87,30 +87,30 @@ export default function PahNiLamGuPage() {
         <ul className="list-disc list-inside space-y-1">
           {pahNiLamGu.content.features.map((feature) => {
             return (
-              <li>{feature}</li>
+              <li key={feature}>{feature}</li>
             )
           })}
         </ul>
       </div>
 
       {/* 設計說明 */}
-      <div>
+      <div className="space-y-2">
         <h2 className="text-xl font-semibold mb-2">{pahNiLamGu.sections.design}</h2>
         {/* 1. 故事背景 */}
         <div className="space-y-2">
           <strong>{pahNiLamGu.content.storyBackground.title}</strong>
-          <p>
+          <p className="leading-relaxed">
             {pahNiLamGu.content.storyBackground.content1}
           </p>
-          <p>
+          <p className="leading-relaxed">
             {pahNiLamGu.content.storyBackground.content2}
           </p>
         </div>
-        
+
         {/* 2. 場景說明 */}
-        <div>
+        <div className="space-y-2">
           <strong>{pahNiLamGu.content.sceneDesign.title}</strong>
-          <p>
+          <p className="leading-relaxed">
             {pahNiLamGu.content.sceneDesign.content}
           </p>
         </div>
@@ -118,21 +118,21 @@ export default function PahNiLamGuPage() {
         {/* 3. 操作方式 */}
         <p className="leading-relaxed">
           <strong>{pahNiLamGu.sections.operation}</strong>
-            {pahNiLamGu.content.controls.map((control) => {
-              return (
-                <>
-                  <br />{control}
-                </>
-              )
-            })}
+          {pahNiLamGu.content.controls.map((control) => {
+            return (
+              <>
+                <br />{control}
+              </>
+            )
+          })}
         </p>
       </div>
 
       {/* 其他補充 */}
       <div className="mt-6 space-y-6">
-        <h2 className="text-xl font-semibold mb-2">其他</h2>
+        <h2 className="text-xl font-semibold mb-2">{pahNiLamGu.sections.others}</h2>
         <div>
-          <strong>遊戲前導預告影片</strong>
+          <strong>{pahNiLamGu.content.previewVideo}</strong>
           <div className="relative w-full pb-[56.25%] mt-2">
             <iframe
               src="https://www.youtube.com/embed/Qwqrl_vaZo0"
@@ -145,7 +145,7 @@ export default function PahNiLamGuPage() {
         </div>
 
         <div>
-          <strong>成果發表影片</strong>
+          <strong>{pahNiLamGu.content.finalVideo}</strong>
           <div className="relative w-full pb-[56.25%] mt-2">
             <iframe
               src="https://www.youtube.com/embed/lX4oTrl02nE"
@@ -158,7 +158,7 @@ export default function PahNiLamGuPage() {
         </div>
 
         <div>
-          <strong>投影片簡報</strong>
+          <strong>{pahNiLamGu.content.slides}</strong>
           <div className="relative w-full pb-[56.25%] mt-2">
             <iframe
               src="https://docs.google.com/presentation/d/1IXXf0MIS3k_l0Jnd580INA85UtnBAWc_ZGxwA0tmMuw/embed?start=false&loop=false&delayms=3000"
@@ -169,7 +169,7 @@ export default function PahNiLamGuPage() {
         </div>
 
         <div>
-          <strong>書面報告</strong>
+          <strong>{pahNiLamGu.content.report}</strong>
           <div className="relative w-full pb-[56.25%] mt-2">
             <iframe
               src="https://docs.google.com/document/d/1b_VGhIp5eUpohtB7jNVG5N_HoHWSJN9VmPhkHtEM24c/preview"
