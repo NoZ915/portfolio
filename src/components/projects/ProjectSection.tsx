@@ -1,8 +1,8 @@
 import { useLocale } from "next-intl";
-import {projects as projectsZh} from "@/data/projects.zh";
-import {projects as projectsEn} from "@/data/projects.en";
 import ProjectCard, { ProjectGrid } from "./ProjectCard";
 
+import {projects as projectsZh} from "@/data/projects.zh";
+import {projects as projectsEn} from "@/data/projects.en";
 
 export const ProjectSection = () => {
   const locale = useLocale();

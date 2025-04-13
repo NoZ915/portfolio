@@ -1,19 +1,27 @@
-// app/projects/century-encounter/page.tsx 或 pages/projects/century-encounter.tsx
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
+import {projects as projectsZh} from "@/data/projects.zh";
+import {projects as projectsEn} from "@/data/projects.en";
+import { useLocale } from "next-intl";
+import { getProjectByLink } from "@/lib/project";
+
 export default function PahNiLamGuPage() {
+  const locale = useLocale();
+  const projects = locale === "zh" ? projectsZh : projectsEn;
+  const project = getProjectByLink(projects, "/projects/pah-ni-lam-gu");
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">百年南遇</h1>
-        <p className="text-muted-foreground mt-2">一款結合 PixiJS 與 LINE Bot 的互動式解謎遊戲</p>
+        <h1 className="text-3xl font-bold">{project.title}</h1>
+        <p className="text-muted-foreground mt-2">{project.description}</p>
       </div>
 
       <div className="rounded-lg overflow-hidden">
         <Image
-          src="/projects/pah-ni-lam-gu.png"
-          alt="百年南遇遊戲預覽圖"
+          src={project.image}
+          alt={`${project.title} image`}
           width={800}
           height={400}
           className="w-full object-cover rounded-lg shadow"
@@ -23,7 +31,7 @@ export default function PahNiLamGuPage() {
       <div>
         <h2 className="text-xl font-semibold mb-2">使用技術</h2>
         <div className="flex flex-wrap gap-2">
-          {["PixiJS", "LINE Bot", "Express", "Heroku"].map((skill, index) => (
+          {project.skills.map((skill, index) => (
             <Badge key={index} variant="outline">
               {skill}
             </Badge>
