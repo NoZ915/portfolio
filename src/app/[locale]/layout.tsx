@@ -18,7 +18,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="bg-gray-100">
+      <body>
         <NextIntlClientProvider>
           <Header />
           <main className="pt-16">
