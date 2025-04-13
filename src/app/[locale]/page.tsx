@@ -9,7 +9,7 @@ export default function HomePage() {
   const t = useTranslations('HomePage');
 
   return (
-    <main className="min-h-screen p-8 bg-gray-100">
+    <main className="min-h-screen p-8">
       <section className="max-w-5xl mx-auto space-y-4">
         {/* 自我介紹 */}
         <div className="space-y-2 px-4">
