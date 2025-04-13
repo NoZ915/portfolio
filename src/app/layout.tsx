@@ -14,8 +14,44 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YuXuan Lin's Portfolio",
-  description: "YuXuan Lin's Portfolio",
+  title: "YuXuan Lin (林育瑄, Tina Lin)｜NoZ Portfolio",
+  description: "Hi，我是YuXuan Lin (林育瑄, Tina Lin)，這是我以 Next.js 製作的前端開發個人網站與專案展示。",
+  keywords: [
+    "作品集",
+    "前端開發",
+    "後端開發",
+    "全端開發",
+    "個人網站",
+    "林育瑄",
+    "YuXuan Lin",
+    "Tina Lin",
+    "Tina",
+    "NoZ",
+    "NoZ Portfolio"
+  ],
+  openGraph: {
+    title: "YuXuan Lin's Portfolio",
+    description: "展示個人專案與技能的網站",
+    url: "https://noz.vercel.app/",
+    siteName: "YuXuan Lin's Portfolio",
+    images: [
+      {
+        url: "https://noz.vercel.app/NoZ_logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "zh-TW",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
