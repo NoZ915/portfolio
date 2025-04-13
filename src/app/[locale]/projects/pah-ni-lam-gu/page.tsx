@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
-import {projects as projectsZh} from "@/data/projects.zh";
-import {projects as projectsEn} from "@/data/projects.en";
+import { projects as projectsZh } from "@/data/projects.zh";
+import { projects as projectsEn } from "@/data/projects.en";
+import { pahNiLamGu as pahNiLamGuZh } from "@/data/pah-ni-lam-gu.zh";
+import { pahNiLamGu as pahNiLamGuEn } from "@/data/pah-ni-lam-gu.en";
 import { useLocale } from "next-intl";
 import { getProjectByLink } from "@/lib/project";
 
@@ -10,6 +12,7 @@ export default function PahNiLamGuPage() {
   const locale = useLocale();
   const projects = locale === "zh" ? projectsZh : projectsEn;
   const project = getProjectByLink(projects, "/projects/pah-ni-lam-gu");
+  const pahNiLamGu = locale === "zh" ? pahNiLamGuZh : pahNiLamGuEn;
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 space-y-6">
@@ -28,8 +31,9 @@ export default function PahNiLamGuPage() {
         />
       </div>
 
+      {/* 使用技術 */}
       <div>
-        <h2 className="text-xl font-semibold mb-2">使用技術</h2>
+        <h2 className="text-xl font-semibold mb-2">{pahNiLamGu.sections.technologies}</h2>
         <div className="flex flex-wrap gap-2">
           {project.skills.map((skill, index) => (
             <Badge key={index} variant="outline">
@@ -39,64 +43,141 @@ export default function PahNiLamGuPage() {
         </div>
       </div>
 
+      {/* 專案介紹 */}
       <div>
-        <h2 className="text-xl font-semibold mb-2">專案介紹</h2>
-        <p className="leading-relaxed">
-          「百年南遇」是一款互動式解謎遊戲，玩家透過 LINE Bot 接收任務，進入使用 PixiJS 製作的遊戲介面解開謎題。遊戲題材取自校園歷史與文化，藉由趣味機制讓玩家沉浸式學習。
+        <h2 className="text-xl font-semibold mb-2">{pahNiLamGu.sections.introduction}</h2>
+        <p className="leading-relaxed space-y-2">
+          {pahNiLamGu.content.intro1}
+        </p>
+        <p className="leading-relaxed mt-2">
+          {pahNiLamGu.content.intro2}
         </p>
       </div>
 
+      {/* 專案連結 */}
       <div>
-        <h2 className="text-xl font-semibold mb-2">主要功能</h2>
+        <h2 className="text-xl font-semibold mb-2">{pahNiLamGu.sections.links}</h2>
         <ul className="list-disc list-inside space-y-1">
-          <li>使用 PixiJS 製作動態互動遊戲場景</li>
-          <li>透過 LINE Bot 傳送關卡提示、接受玩家輸入</li>
-          <li>使用 Express 架設後端 API 處理任務邏輯與資料儲存</li>
-          <li>部署至 Heroku 以提供遊戲連線</li>
+          <li>
+            <a
+              href="https://noz915.github.io/pah-ni-lam-gu/main.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              {pahNiLamGu.content.linkGame}
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://noz915.github.io/pah-ni-lam-gu/main.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              {pahNiLamGu.content.linkSource}
+            </a>
+          </li>
         </ul>
       </div>
 
+      {/* 主要功能 */}
       <div>
-        <h2 className="text-xl font-semibold mb-2">開發心得</h2>
+        <h2 className="text-xl font-semibold mb-2">{pahNiLamGu.sections.features}</h2>
+        <ul className="list-disc list-inside space-y-1">
+          {pahNiLamGu.content.features.map((feature) => {
+            return (
+              <li>{feature}</li>
+            )
+          })}
+        </ul>
+      </div>
+
+      {/* 設計說明 */}
+      <div>
+        <h2 className="text-xl font-semibold mb-2">{pahNiLamGu.sections.design}</h2>
+        {/* 1. 故事背景 */}
+        <div className="space-y-2">
+          <strong>{pahNiLamGu.content.storyBackground.title}</strong>
+          <p>
+            {pahNiLamGu.content.storyBackground.content1}
+          </p>
+          <p>
+            {pahNiLamGu.content.storyBackground.content2}
+          </p>
+        </div>
+        
+        {/* 2. 場景說明 */}
+        <div>
+          <strong>{pahNiLamGu.content.sceneDesign.title}</strong>
+          <p>
+            {pahNiLamGu.content.sceneDesign.content}
+          </p>
+        </div>
+
+        {/* 3. 操作方式 */}
         <p className="leading-relaxed">
-          這是我首次將 PixiJS 與 LINE Bot 結合開發互動式遊戲。從遊戲設計、美術製作到後端串接皆自行完成，過程中學會了如何規劃遊戲邏輯與處理跨平台資料互動，也更熟悉了 Express 與 Heroku 的部署流程。
+          <strong>{pahNiLamGu.sections.operation}</strong>
+            {pahNiLamGu.content.controls.map((control) => {
+              return (
+                <>
+                  <br />{control}
+                </>
+              )
+            })}
         </p>
       </div>
 
-      <div>
-        <h2 className="text-xl font-semibold mb-2">專案連結</h2>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            <a
-              href="https://github.com/你的帳號/你的-repo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              GitHub 原始碼
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://你的-demo-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              線上遊玩 Demo
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/watch?v=你的影片ID"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              作品介紹影片
-            </a>
-          </li>
-        </ul>
+      {/* 其他補充 */}
+      <div className="mt-6 space-y-6">
+        <h2 className="text-xl font-semibold mb-2">其他</h2>
+        <div>
+          <strong>遊戲前導預告影片</strong>
+          <div className="relative w-full pb-[56.25%] mt-2">
+            <iframe
+              src="https://www.youtube.com/embed/Qwqrl_vaZo0"
+              title="遊戲前導預告影片"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full border-0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div>
+          <strong>成果發表影片</strong>
+          <div className="relative w-full pb-[56.25%] mt-2">
+            <iframe
+              src="https://www.youtube.com/embed/lX4oTrl02nE"
+              title="成果發表影片"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full border-0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div>
+          <strong>投影片簡報</strong>
+          <div className="relative w-full pb-[56.25%] mt-2">
+            <iframe
+              src="https://docs.google.com/presentation/d/1IXXf0MIS3k_l0Jnd580INA85UtnBAWc_ZGxwA0tmMuw/embed?start=false&loop=false&delayms=3000"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full border-0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div>
+          <strong>書面報告</strong>
+          <div className="relative w-full pb-[56.25%] mt-2">
+            <iframe
+              src="https://docs.google.com/document/d/1b_VGhIp5eUpohtB7jNVG5N_HoHWSJN9VmPhkHtEM24c/preview"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full border-0"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );
