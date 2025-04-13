@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://noz.vercel.app/NoZ_logo.png",
-        width: 1200,
-        height: 630,
+        width: 298,
+        height: 298,
       },
     ],
     locale: "zh-TW",
