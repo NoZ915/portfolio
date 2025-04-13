@@ -18,12 +18,14 @@ export const metadata: Metadata = {
   description: "YuXuan Lin's Portfolio",
 };
 
-export default function RootLayout({ children, params: { locale } }: any) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en">
+      <body>
         <TooltipProvider>
           {children}
         </TooltipProvider>
