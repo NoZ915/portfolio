@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import { FaCalendarAlt } from "react-icons/fa";
 
 import { projects as projectsZh } from "@/data/projects.zh";
 import { projects as projectsEn } from "@/data/projects.en";
@@ -16,9 +17,13 @@ export default function PahNiLamGuPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-8 space-y-6">
-      <div>
+      <div className="space-y-2">
         <h1 className="text-3xl font-bold">{project.title}</h1>
-        <p className="text-muted-foreground mt-2">{project.description}</p>
+        <span className="flex items-center gap-2 text-sm text-muted-foreground">
+          <FaCalendarAlt className="w-4 h-4" />
+          {project.time}
+        </span>
+        <p className="text-muted-foreground">{project.description}</p>
       </div>
 
       <div className="rounded-lg overflow-hidden">
@@ -118,11 +123,13 @@ export default function PahNiLamGuPage() {
         {/* 3. 操作方式 */}
         <p className="leading-relaxed">
           <strong>{pahNiLamGu.sections.operation}</strong>
-          {pahNiLamGu.content.controls.map((control) => {
-            return (
-              <div key={control}>{control}</div>
-            )
-          })}
+          <ul className="list-disc list-inside mt-1">
+            {pahNiLamGu.content.controls.map((control, index) => {
+              return (
+                <li key={index}>{control}</li>
+              )
+            })}
+          </ul>
         </p>
       </div>
 
