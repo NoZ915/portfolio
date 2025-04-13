@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "name": "YuXuan Lin",
+    "description": "I’m passionate about full-stack development and enjoy transforming data and ideas into complete systems. I also love sharing knowledge—I’ve joined a JavaScript study group and led several sessions."
+  },
+  "SkillSection": {
+    "title": "Skillset",
+    "language": "Language",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devTool": "Dev/Deployment Tools",
+    "designTool": "Design Tools"
+  }
+}

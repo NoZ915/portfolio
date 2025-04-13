@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "name": "YuXuan Lin 林育瑄",
+    "description": "對於前後端開發，有極大的熱情與興趣，總是讓各種專題不再只是數據、想法，而是更具完整性的系統，另外也樂於分享學習新知，曾參與過工作室 JavaScript 讀書會並擔任導讀。"
+  },
+  "SkillSection": {
+    "title": "技能",
+    "language": "語言",
+    "frontend": "前端",
+    "backend": "後端",
+    "devTool": "開發/部署工具",
+    "designTool": "設計工具"
+  }
+}

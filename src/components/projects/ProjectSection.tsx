@@ -1,10 +1,18 @@
+import { useLocale } from "next-intl";
+import {projects as projectsZh} from "@/data/projects.zh";
+import {projects as projectsEn} from "@/data/projects.en";
 import ProjectCard, { ProjectGrid } from "./ProjectCard";
-import {projects} from "../../utils/projects";
+
 
 export const ProjectSection = () => {
+  const locale = useLocale();
+  const projects = locale === "zh" ? projectsZh : projectsEn;
+
   return (
     <div className="mt-12">
-      <h2 className="text-2xl font-bold px-4 mb-2">專案</h2>
+      <h2 className="text-2xl font-bold px-4 mb-2">
+        { locale === "zh" ? "專案" : "Projects" }
+      </h2>
       <ProjectGrid>
         {projects.map((project, index) => {
           return(
