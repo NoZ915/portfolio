@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     siteName: "YuXuan Lin's Portfolio",
     images: [
       {
-        url: "https://noz.vercel.app/NoZ_logo.png",
-        width: 298,
-        height: 298,
+        url: "https://noz.vercel.app/NoZ_opengraph.png",
+        width: 1200,
+        height: 630,
       },
     ],
     locale: "zh-TW",
