@@ -15,7 +15,7 @@ export default function PahNiLamGuPage() {
   const pahNiLamGu = locale === "zh" ? pahNiLamGuZh : pahNiLamGuEn;
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8 space-y-6">
+    <div className="max-w-3xl mx-auto px-6 py-8 space-y-6">
       <div>
         <h1 className="text-3xl font-bold">{project.title}</h1>
         <p className="text-muted-foreground mt-2">{project.description}</p>
@@ -120,9 +120,7 @@ export default function PahNiLamGuPage() {
           <strong>{pahNiLamGu.sections.operation}</strong>
           {pahNiLamGu.content.controls.map((control) => {
             return (
-              <>
-                <br />{control}
-              </>
+              <div key={control}>{control}</div>
             )
           })}
         </p>
