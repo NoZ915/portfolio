@@ -9,6 +9,61 @@ import { pahNiLamGu as pahNiLamGuEn } from "@/data/pah-ni-lam-gu.en";
 import { useLocale } from "next-intl";
 import { getProjectByLink } from "@/lib/project";
 
+import { Metadata } from "next";
+type Props = {
+  params: { locale: string };
+};
+export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+  const { locale } = await params;
+
+  // 預設是中文，如果 locale 是其他語言才使用英文
+  if (locale === "zh") {
+    return {
+      title: "百年南遇 ─ 基於 PixiJS 與 LINE Bot 之解謎遊戲",
+      description:
+        "由 PixiJS 打造的解謎遊戲，結合 LINE Bot 與台南百年歷史。體驗穿越時空的互動劇情，解開台南的歷史謎題。",
+      openGraph: {
+        title: "百年南遇 ─ 基於 PixiJS 與 LINE Bot 之解謎遊戲",
+        description:
+          "由 PixiJS 打造的解謎遊戲，結合 LINE Bot 與台南百年歷史。體驗穿越時空的互動劇情，解開台南的歷史謎題。",
+        url: "https://noz.vercel.app/zh/projects/pah-ni-lam-gu",
+        siteName: "YuXuan Lin 的作品集",
+        locale: "zh",
+        type: "website",
+        images: [
+          {
+            url: "https://noz.vercel.app/NoZ_opengraph.png",
+            width: 1200,
+            height: 630,
+          },
+        ],
+      }
+    };
+  }
+  // 其他語言的情況，預設為英文
+  return {
+    title: "Pah Nî Lâm Gū - A Puzzle Game Built with PixiJS and LINE Bot",
+    description:
+      "A puzzle game created with PixiJS, combined with LINE Bot and a century of Tainan history. Experience an interactive time-traveling storyline and unravel historical mysteries of Tainan.",
+    openGraph: {
+      title: "Pah Nî Lâm Gū - A Puzzle Game Built with PixiJS and LINE Bot",
+      description:
+        "A puzzle game created with PixiJS, combined with LINE Bot and a century of Tainan history. Experience an interactive time-traveling storyline and unravel historical mysteries of Tainan.",
+      url: "https://noz.vercel.app/en/projects/pah-ni-lam-gu",
+      siteName: "YuXuan Lin's Portfolio",
+      locale: "en",
+      type: "website",
+      images: [
+        {
+          url: "https://noz.vercel.app/NoZ_opengraph.png",
+          width: 1200,
+          height: 630,
+        },
+      ],
+    }
+  };
+};
+
 export default function PahNiLamGuPage() {
   const locale = useLocale();
   const projects = locale === "zh" ? projectsZh : projectsEn;
