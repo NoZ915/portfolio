@@ -11,13 +11,12 @@ import { getProjectByLink } from "@/lib/project";
 
 import { Metadata } from "next";
 type Props = {
-  params: { locale: string };
-};
-
-export const generateMetadata = async (
+  params: Promise<{ locale: string }>
+}
+export async function generateMetadata(
   { params }: Props
-): Promise<Metadata> => {
-  const { locale } = params;
+): Promise<Metadata> {
+  const { locale } = await params;
 
   // 預設是中文，如果 locale 是其他語言才使用英文
   if (locale === "zh") {
