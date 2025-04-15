@@ -4,16 +4,16 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 import { projects as projectsZh } from "@/data/projects.zh";
 import { projects as projectsEn } from "@/data/projects.en";
-import { bsmf as bsmfZh } from "@/data/bsmf.zh";
-import { bsmf as bsmfEn } from "@/data/bsmf.en";
+import { binGobin as binGobinZh } from "@/data/binGobin.zh";
+import { binGobin as binGobinEn } from "@/data/binGobin.en";
 import { useLocale } from "next-intl";
 import { getProjectByLink } from "@/lib/project";
 
-export default function BsmfPage() {
+export default function BinGoBinPage() {
   const locale = useLocale();
   const projects = locale === "zh" ? projectsZh : projectsEn;
-  const project = getProjectByLink(projects, "/projects/bsmf");
-  const bsmf = locale === "zh" ? bsmfZh : bsmfEn;
+  const project = getProjectByLink(projects, "/projects/binGobin");
+  const binGobin = locale === "zh" ? binGobinZh : binGobinEn;
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-8 space-y-6">
@@ -38,7 +38,7 @@ export default function BsmfPage() {
 
       {/* 使用技術 */}
       <div className="space-y-2">
-        <h2 className="text-xl font-semibold">{bsmf.sections.technologies}</h2>
+        <h2 className="text-xl font-semibold">{binGobin.sections.technologies}</h2>
         <div className="flex flex-wrap gap-2">
           {project.skills.map((skill, index) => (
             <Badge key={index} variant="outline">
@@ -46,48 +46,41 @@ export default function BsmfPage() {
             </Badge>
           ))}
         </div>
-        <Image
-          src="/bsmf-tech.png"
-          alt={`${project.title} image`}
-          width={800}
-          height={400}
-          className="w-full object-cover rounded-lg shadow"
-        />
       </div>
 
       {/* 專案介紹 */}
       <div className="space-y-2">
-        <h2 className="text-xl font-semibold">{bsmf.sections.introduction}</h2>
+        <h2 className="text-xl font-semibold">{binGobin.sections.introduction}</h2>
         <p className="leading-relaxed">
-          {bsmf.content.intro1}
+          {binGobin.content.intro1}
         </p>
         <p className="leading-relaxed">
-          {bsmf.content.intro2}
+          {binGobin.content.intro2}
         </p>
       </div>
 
       {/* 專案連結 */}
       <div>
-        <h2 className="text-xl font-semibold mb-2">{bsmf.sections.links}</h2>
+        <h2 className="text-xl font-semibold mb-2">{binGobin.sections.links}</h2>
         <ul className="list-disc list-inside space-y-1">
           <li>
             <a
-              href="https://bayesian-student-mistake-finder.zeabur.app/"
+              // href="https://bayesian-student-mistake-finder.zeabur.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 hover:underline cursor-not-allowed"
             >
-              {bsmf.content.linkSite}
+              {binGobin.content.linkSite}
             </a>
           </li>
           <li>
             <a
-              href="https://github.com/NoZ915/bayesian-student-mistake-finder?tab=readme-ov-file"
+              href="https://github.com/NoZ915/database-final-project?tab=readme-ov-file"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
-              {bsmf.content.linkSource}
+              {binGobin.content.linkSource}
             </a>
           </li>
         </ul>
@@ -95,9 +88,9 @@ export default function BsmfPage() {
 
       {/* 主要功能 */}
       <div>
-        <h2 className="text-xl font-semibold mb-2">{bsmf.sections.features}</h2>
+        <h2 className="text-xl font-semibold mb-2">{binGobin.sections.features}</h2>
         <ul className="list-disc list-inside space-y-1">
-          {bsmf.content.features.map((feature, index) => (
+          {binGobin.content.features.map((feature, index) => (
             <li key={index} className="leading-relaxed">
               {feature}
             </li>
@@ -107,13 +100,26 @@ export default function BsmfPage() {
 
       {/* 其他補充 */}
       <div className="mt-6 space-y-6">
-        <h2 className="text-xl font-semibold mb-2">{bsmf.sections.others}</h2>
+        <h2 className="text-xl font-semibold mb-2">{binGobin.sections.others}</h2>
 
         <div>
-          <strong>{bsmf.content.slides}</strong>
+          <strong>{binGobin.content.slides}</strong>
           <div className="relative w-full pb-[56.25%] mt-2">
             <iframe
-              src="https://docs.google.com/presentation/d/1RNY6QLwozCJUY3GD6bTNetehEfIrx2PgUCLv_jvcJAE/embed?start=false&loop=false&delayms=3000"
+              src="https://drive.google.com/file/d/1YqOZp7A9HebdqtgIxa24_bmjaVz50abO/preview"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full border-0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div>
+          <strong>{binGobin.content.finalVideo}</strong>
+          <div className="relative w-full pb-[56.25%] mt-2">
+            <iframe
+              src="https://www.youtube.com/embed/wkv-owmVaQA"
+              title="成果發表影片"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full border-0"
             ></iframe>

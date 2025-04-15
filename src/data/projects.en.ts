@@ -27,7 +27,7 @@ export const projects = [
     description:
       "A platform where users can easily find others to split shipping fees or make group purchases. Responsible for backend development and partial frontend refactoring.",
     skills: ["EJS", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "Zeabur"],
-    link: "/projects/century-encounter"
+    link: "/projects/binGobin"
   },
   {
     title: "Handwritten Digit Recognition System",

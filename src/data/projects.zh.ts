@@ -24,7 +24,7 @@ export const projects = [
         image: "/projects/bingobin.png",
         description: "一個讓使用者可以快速找到人一起免運、併單、團購的平台，主要負責後端以及前端部分重構。",
         skills: ["EJS", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "Zeabur"],
-        link: "/projects/century-encounter"
+        link: "/projects/binGobin"
     },
     {
         title: "手寫辨識系統",
