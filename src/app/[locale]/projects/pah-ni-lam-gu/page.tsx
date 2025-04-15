@@ -11,7 +11,7 @@ import { getProjectByLink } from "@/lib/project";
 
 import { Metadata } from "next";
 type Props = {
-  params: { locale: string };
+  params: Record<string, string>;
 };
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
   const { locale } = params;
