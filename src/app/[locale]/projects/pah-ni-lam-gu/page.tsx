@@ -10,7 +10,11 @@ import { useLocale } from "next-intl";
 import { getProjectByLink } from "@/lib/project";
 
 import { Metadata } from "next";
-export const generateMetadata = async ({ params }: { params: { locale: string } }): Promise<Metadata> => {
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> => {
   const { locale } = params;
 
   // 預設是中文，如果 locale 是其他語言才使用英文
