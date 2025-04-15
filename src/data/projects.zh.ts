@@ -31,7 +31,7 @@ export const projects = [
         subtitle: "神經網路 (Multilayer Perceptron)",
         time: "2023/09 ~ 2023/10",
         image: "/projects/hand-written.png",
-        description: "使用原生JavaScript (Without AI Framework)完成，將MNIST資料集讀入之後作訓練，並且搭配p5.js供使用者可以在網頁中寫上數字，以及利用CSS視覺化成果。",
+        description: "使用原生JavaScript (Without AI Framework)實作MLP，並將MNIST資料集讀入之後作訓練，且搭配p5.js供使用者可以在網頁中寫上數字，以及利用CSS視覺化成果。",
         skills: ["MLP (Multilayer Perceptron)", "JavaScript", "HTML", "CSS", "p5.js"],
         link: "/projects/century-encounter"
     },
