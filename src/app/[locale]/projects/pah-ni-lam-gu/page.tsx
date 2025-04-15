@@ -14,7 +14,7 @@ type Props = {
   params: { locale: string };
 };
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-  const { locale } = await params;
+  const { locale } = params;
 
   // 預設是中文，如果 locale 是其他語言才使用英文
   if (locale === "zh") {
