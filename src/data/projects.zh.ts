@@ -33,7 +33,7 @@ export const projects = [
         image: "/projects/hand-written.png",
         description: "使用原生JavaScript (Without AI Framework)實作MLP，並將MNIST資料集讀入之後作訓練，且搭配p5.js供使用者可以在網頁中寫上數字，以及利用CSS視覺化成果。",
         skills: ["MLP (Multilayer Perceptron)", "JavaScript", "HTML", "CSS", "p5.js"],
-        link: "/projects/century-encounter"
+        link: "/projects/hand-written"
     },
     {
         title: "百年南遇 Pah Nî Lâm Gū",

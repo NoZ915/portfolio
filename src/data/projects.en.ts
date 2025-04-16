@@ -37,7 +37,7 @@ export const projects = [
     description:
       "Built with vanilla JavaScript (no AI framework), this project loads the MNIST dataset for training. Users can write digits directly on the web interface using p5.js, and CSS is used to visualize the recognition results.",
     skills: ["MLP (Multilayer Perceptron)", "JavaScript", "HTML", "CSS", "p5.js"],
-    link: "/projects/century-encounter"
+    link: "/projects/hand-written"
   },
   {
     title: "Pah Nî Lâm Gū",
