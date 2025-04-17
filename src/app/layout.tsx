@@ -62,9 +62,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        {/* google search console */}
+        <meta name="google-site-verification" content="hrG7cYdeih23ZbxIYj-g4wlIzJ-Mnperayth55x0TsA" />
+        {/* google analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-V9RMHD1FLP"
           strategy="afterInteractive"
@@ -81,6 +82,10 @@ export default function RootLayout({
     `,
           }}
         />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <TooltipProvider>
           {children}
         </TooltipProvider>
