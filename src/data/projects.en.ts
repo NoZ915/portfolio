@@ -76,8 +76,8 @@ export const projects = [
     image: "/projects/memory-game.png",
     description:
       "A memory game built with JavaScript, enhanced with character HP bars and color-changing effects using CSS. Player scores are saved via localStorage, encouraging players to challenge their own high scores.",
-    skills: ["HTML", "CSS", "JavaScript"],
-    link: "/projects/century-encounter"
+    skills: ["HTML", "CSS", "JavaScript", "jQuery"],
+    link: "/projects/memory-game"
   },
   {
     title: "Monster Maze Adventure",

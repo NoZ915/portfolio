@@ -68,8 +68,8 @@ export const projects = [
         time: "2020/10 ~ 2020/12",
         image: "/projects/memory-game.png",
         description: "藉由 JavaScript 完成的記憶遊戲，再加上 CSS 加入血條 與會變色的腳色，將一般的記憶遊戲又更添樂趣。以及 利用 localStorage 將分數紀錄，讓玩家可以再次挑戰自 己的分數！",
-        skills: ["HTML", "CSS", "JavaScript"],
-        link: "/projects/century-encounter"
+        skills: ["HTML", "CSS", "JavaScript", "jQuery"],
+        link: "/projects/memory-game"
     },
     {
         title: "迷宮打怪喝藥水",
