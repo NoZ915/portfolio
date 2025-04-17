@@ -57,7 +57,7 @@ export const projects = [
     description:
       "A complete learning management system designed and built from scratch, including learning scenarios, course content, and full-stack web development. Features include interactive learning (video lessons, Q&A, games), score tracking, leaderboard, message board, and login/registration.",
     skills: ["HTML", "CSS", "DIVE", "JavaScript", "diveLinker", "PHP", "MySQL", "phpMyAdmin", "Cookie", "XAMPP", "ngrok"],
-    link: "/projects/century-encounter"
+    link: "/projects/dengueFeverLms"
   },
   {
     title: "Taiwan Travel Guide",

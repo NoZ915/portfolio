@@ -51,7 +51,7 @@ export const projects = [
         image: "/projects/lms.png",
         description: "為一學習管理系統，從學習情境、課程內容設計，網站前後端架設皆自行完成。該網站包含學習互動（影片教學、問答、遊戲式互動測驗)、成績紀錄與排行榜、留言板、登入 / 註冊頁面",
         skills: ["HTML", "CSS", "DIVE", "JavaScript", "diveLinker", "PHP", "MySQL", "phpMyAdmin", "Cookie", "XAMPP", "ngrok"],
-        link: "/projects/century-encounter"
+        link: "/projects/dengueFeverLms"
     },
     {
         title: "臺灣旅遊導覽",
@@ -65,7 +65,7 @@ export const projects = [
     {
         title: "記憶遊戲進階版",
         subtitle: "擁有角色互動之記憶遊戲",
-        time: "22020/10 ~ 2020/12",
+        time: "2020/10 ~ 2020/12",
         image: "/projects/memory-game.png",
         description: "藉由 JavaScript 完成的記憶遊戲，再加上 CSS 加入血條 與會變色的腳色，將一般的記憶遊戲又更添樂趣。以及 利用 localStorage 將分數紀錄，讓玩家可以再次挑戰自 己的分數！",
         skills: ["HTML", "CSS", "JavaScript"],
