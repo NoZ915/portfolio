@@ -60,7 +60,7 @@ export const projects = [
         image: "/projects/f2e.png",
         description: "透過 JS 串接交通部提供的 api，ajax 實現方法則用了 axios 的套件，地圖用了 Leaflet 這個 js 框架，以及地圖資料使用了openStreetMap， 而定位的部分則是使用了navigation web api",
         skills: ["HTML", "CSS", "JavaScript", "axios", "Leaflet", "OpenStreetMap", "Navigation Web API"],
-        link: "/projects/century-encounter"
+        link: "/projects/taiwan-travel-guide"
     },
     {
         title: "記憶遊戲進階版",

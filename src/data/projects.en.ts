@@ -67,7 +67,7 @@ export const projects = [
     description:
       "Used JavaScript to fetch open data APIs provided by Taiwan’s Ministry of Transportation. Implemented AJAX requests using Axios. Built a map with Leaflet.js using OpenStreetMap, and integrated location tracking using the Navigation Web API.",
     skills: ["HTML", "CSS", "JavaScript", "axios", "Leaflet", "OpenStreetMap", "Navigation Web API"],
-    link: "/projects/century-encounter"
+    link: "/projects/taiwan-travel-guide"
   },
   {
     title: "Advanced Memory Game",
