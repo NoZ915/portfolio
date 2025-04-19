@@ -75,9 +75,9 @@ export const projects = [
         title: "迷宮打怪喝藥水",
         subtitle: "DIVE平台結合JavaScript之打怪遊戲",
         time: "2019/10 ~ 2019/12",
-        image: "/projects/dive.png",
+        image: "/projects/maze-game.png",
         description: "利用學校實驗室開發的 DIVE 平台完成之遊戲，並且搭配 JavaScript 來串接個個專案，達到可以跳轉地圖的功能。",
         skills: ["DIVE", "JavaScript"],
-        link: "/projects/century-encounter"
+        link: "/projects/maze-game"
     }
 ];

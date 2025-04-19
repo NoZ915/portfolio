@@ -83,10 +83,10 @@ export const projects = [
     title: "Monster Maze Adventure",
     subtitle: "DIVE Platform RPG Game with JavaScript",
     time: "2019/10 ~ 2019/12",
-    image: "/projects/dive.png",
+    image: "/projects/maze-game.png",
     description:
       "A monster-fighting RPG game built using the school's DIVE platform, combined with JavaScript to enable map switching and game logic implementation.",
     skills: ["DIVE", "JavaScript"],
-    link: "/projects/century-encounter"
+    link: "/projects/maze-game"
   }
 ];
