@@ -19,7 +19,7 @@ export function TimelineItem({ time, title, description, }: TimelineItemProps) {
           {subitem.link ? (
             <a
               href={subitem.link}
-              className="text-gray-500 hover:text-gray-800"
+              className="text-blue-600 hover:underline text-base"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,7 +42,7 @@ export function TimelineItem({ time, title, description, }: TimelineItemProps) {
             {item.link ? (
               <a
                 href={item.link}
-                className="text-gray-500 hover:text-gray-800 mb-1"
+                className="text-blue-600 hover:underline mb-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
