@@ -61,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh">
       <head>
         {/* google search console */}
         <meta name="google-site-verification" content="hrG7cYdeih23ZbxIYj-g4wlIzJ-Mnperayth55x0TsA" />
