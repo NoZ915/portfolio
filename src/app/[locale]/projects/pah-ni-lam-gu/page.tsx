@@ -122,7 +122,7 @@ export default function PahNiLamGuPage() {
         <ul className="list-disc list-inside space-y-1">
           <li>
             <a
-              href="https://noz915.github.io/pah-ni-lam-gu/main.html"
+              href="https://noz915.github.io/pah-ni-lam-gu/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
