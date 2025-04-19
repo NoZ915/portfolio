@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YuXuan Lin (林育瑄, Tina Lin)｜NoZ Portfolio",
+  title: "林育瑄｜Tina Lin｜NoZ Portfolio",
   description: "Hi，我是YuXuan Lin (林育瑄, Tina Lin)，這是我的前後端開發個人網站專案展示與個人網站。",
   keywords: [
     "作品集",
