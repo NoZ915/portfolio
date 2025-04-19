@@ -132,7 +132,7 @@ export default function PahNiLamGuPage() {
           </li>
           <li>
             <a
-              href="https://noz915.github.io/pah-ni-lam-gu/main.html"
+              href="https://github.com/NoZ915/pah-ni-lam-gu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
