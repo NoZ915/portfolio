@@ -63,7 +63,7 @@ export const projects = [
     title: "Taiwan Travel Guide",
     subtitle: "Integrated with MOTC Open Data APIs",
     time: "2021/10 ~ 2021/12",
-    image: "/projects/f2e.png",
+    image: "/projects/taiwan-travel-guide.png",
     description:
       "Used JavaScript to fetch open data APIs provided by Taiwan’s Ministry of Transportation. Implemented AJAX requests using Axios. Built a map with Leaflet.js using OpenStreetMap, and integrated location tracking using the Navigation Web API.",
     skills: ["HTML", "CSS", "JavaScript", "axios", "Leaflet", "OpenStreetMap", "Navigation Web API"],
