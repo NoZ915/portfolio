@@ -5,7 +5,7 @@ export const experience = [
     title: "TITANSOFT (Singapore)｜Software Intern",
     description: [
       {
-        text: "Maintained and enhanced over 10 internal systems, involving frontend/backend optimization and user experience improvement, gaining hands-on experience in large-scale enterprise projects.",
+        text: "Maintained and enhanced 10+ internal systems, focusing on full-stack optimization and user experience improvements; consistently gained hands-on experience in large-scale project development.",
       },
       {
         text: "Proactively tackled long-standing technical debt by resolving a critical issue caused by IIS's 29-hour recycling mechanism that resulted in session loss and form data disappearance—significantly improving system stability and user trust.",
