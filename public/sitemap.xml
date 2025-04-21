@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- 英文版 -->
+<url>
+  <loc>https://noz.vercel.app/en</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/ga</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/bsmf</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/binGobin</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/hand-written</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/pah-ni-lam-gu</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/dengueFeverLms</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/taiwan-travel-guide</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/memory-game</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/en/projects/maze-game</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 繁體中文版 -->
+<url>
+  <loc>https://noz.vercel.app/zh</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/ga</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/bsmf</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/binGobin</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/hand-written</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/pah-ni-lam-gu</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/dengueFeverLms</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/taiwan-travel-guide</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/memory-game</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://noz.vercel.app/zh/projects/maze-game</loc>
+  <lastmod>2025-04-21T13:36:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
