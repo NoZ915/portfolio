@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noz.vercel.app/sitemap.xml
