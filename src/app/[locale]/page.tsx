@@ -1,9 +1,11 @@
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { ProjectSection } from "@/components/projects/ProjectSection";
 import SkillSection from "@/components/skills/SkillSection";
 import { ExperienceSection } from "@/components/timeline/ExperienceSection";
 import { Button } from "@/components/ui/button";
 import { FaGithub } from "react-icons/fa";
+import EducationSection from '@/components/EducationSection';
+import LanguageSection from '@/components/LanguageSection';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
@@ -26,11 +28,18 @@ export default function HomePage() {
         {/* 經驗 */}
         <ExperienceSection />
 
-        {/* 專案區塊 */}
+        {/* 專案 */}
         <ProjectSection />
 
-        {/* 技能區塊 */}
+        {/* 技能 */}
         <SkillSection />
+
+        {/* 教育 */}
+        <EducationSection />
+
+        {/* 語言 */}
+        <LanguageSection />
+
       </section>
     </main>
   );

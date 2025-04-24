@@ -10,5 +10,15 @@
     "backend": "Backend",
     "devTool": "Dev/Deployment Tools",
     "designTool": "Design Tools"
+  },
+  "EducationSection": {
+    "title": "Education",
+    "school": "National University of Tainan",
+    "degree": "Department of Information and Learning Technology",
+    "date": "2019/9 ~ 2024/6"
+  },
+  "LanguageSection": {
+    "title": "Language",
+    "certification": "TOEIC Listening & Reading Test: Score 800"
   }
 }

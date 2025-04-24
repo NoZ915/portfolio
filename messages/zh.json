@@ -10,5 +10,15 @@
     "backend": "後端",
     "devTool": "開發/部署工具",
     "designTool": "設計工具"
+  },
+  "EducationSection": {
+    "title": "教育",
+    "school": "國立臺南大學",
+    "degree": "數位學習科技學系",
+    "date": "2019/9 ~ 2024/6"
+  },
+  "LanguageSection": {
+    "title": "語言",
+    "certification": "TOEIC Listening & Reading Test: Score 800"
   }
 }
