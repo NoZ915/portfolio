@@ -1,7 +1,7 @@
 export const experience = [
   // 鈦坦
   {
-    time: "2024/07 ~ Now",
+    time: "2024/07 ~ Present",
     title: "新加坡商鈦坦科技｜軟體實習工程師",
     description: [
       {
@@ -19,6 +19,12 @@ export const experience = [
       {
         text: "與實習生夥伴一同開發全新微服務，使用 ASP.NET Core 整合公司員工資料與組織架構資訊，支援其他內部系統查詢與調用。",
       },
+      {
+        text: "熟悉 Git 操作與版本控制，專案皆透過 Git 進行團隊合作與 CI/CD 自動化部署流程"
+      },
+      {
+        text: "透過重構資料匯出邏輯，減少 DB 存取次數、導入 cache 儲存重複資料，並以 HashSet 提升資料對應效率，將執行時間從 10 分鐘降至 1 分鐘內"
+      }
     ],
   },
 
