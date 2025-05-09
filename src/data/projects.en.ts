@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "TAINAN選",
+    subtitle: "Course Review System",
+    time: "2025/03 ~ 2025/05",
+    image: "/projects/nutnselect.png",
+    description: "A course review platform designed for students at National University of Tainan. It allows users to search for courses, view and bookmark them, and submit personal reviews. After logging in, users can manage their bookmarks and past reviews. The frontend is built with React, TypeScript, and TanStack Query, styled with Mantine and optimized for mobile responsiveness. The backend is developed using Express.js with a three-layer architecture (Controller, Service, Repository) and Sequelize ORM. MySQL is used for data storage, with Sequelize migrations for schema management. The entire system is deployed on the Zeabur cloud platform.",
+    skills: ["TypeScript", "React", "TanStack", "Mantine", "Express JS", "Sequelize", "MySQL", "Zeabur"],
+    link: "/projects/ga"
+  },
+  {
     title: "Item Selection for Parallel Test Construction",
     subtitle: "Genetic Algorithm",
     time: "2024/05",
