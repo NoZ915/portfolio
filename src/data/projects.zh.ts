@@ -1,10 +1,10 @@
 export const projects = [
     {
         title: "TAINAN選",
-        subtitle: "選課評價系統",
+        subtitle: "已正式上線之選課評價系統",
         time: "2025/03 ~ 2025/05",
         image: "/projects/nutnselect.png",
-        description: "一個專為臺南大學學生打造的選課評價平台，提供課程搜尋、瀏覽、收藏、與撰寫評價功能。使用者登入後可查看個人收藏與評論記錄。前端使用 React、TypeScript 與 TanStack Query 開發，UI 採用 Mantine 並支援手機版響應式設計；後端以 Express.js 搭配 Sequelize ORM，採三層式架構（Controller、Service、Repository）設計，資料儲存於 MySQL，並使用 Sequelize Migration 管理資料表結構，全站部署於 Zeabur 雲平台。",
+        description: "一個專為臺南大學學生打造的選課評價平台，提供課程搜尋、瀏覽、收藏、與撰寫評價功能。使用者登入後可查看個人收藏與評論記錄。",
         skills: ["TypeScript", "React", "TanStack", "Mantine", "Express JS", "Sequelize", "MySQL", "Zeabur"],
         link: "/projects/nutnselect"
     },
